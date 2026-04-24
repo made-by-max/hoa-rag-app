@@ -12,12 +12,11 @@
     background-color: #e9e6dd;
     display: flex;
     flex-direction: row;
-    width: 500px;
+    width: 100%;
 
     align-items: center;
     flex-wrap: nowrap;
-    padding: 16px 24px;
-    border-radius: 10px;
+    padding: 8px 16px;
 }
 
 form {
@@ -57,8 +56,10 @@ button {
 }
 
 .response {
+    padding: 24px 16px;
     opacity: 0;
     animation: fadeIn 200ms forwards;
+    line-height: 1.4;
 }
 
 @keyframes fadeIn {
