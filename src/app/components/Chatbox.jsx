@@ -38,7 +38,7 @@ export default function Chatbox() {
   return (
     <>
       <div className="container">
-        <h1 style={{ color: "white" }}>HOA Bylaws</h1>
+        <h1>HOA Bylaws</h1>
         <div className="responseWindow">
           <div className="inputWrapper">
             <form onSubmit={handleSubmit}>
@@ -52,7 +52,11 @@ export default function Chatbox() {
               />
             </form>
 
-            <button type="submit" disabled={loading}>
+            <button
+              type="submit"
+              disabled={loading}
+              aria-label="Submit question"
+            >
               <SendHorizontal />
             </button>
           </div>
