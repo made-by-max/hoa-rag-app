@@ -47,10 +47,10 @@ function StyleSheet() {
             }
 
             .dot {
-                width: 20px;
-                height: 20px;
+                width: 16px;
+                height: 16px;
                 border-radius: 50%;
-                background-color: #1b1b1f;
+                background-color: #545553;
                 will-change: transform;
             }
             `}

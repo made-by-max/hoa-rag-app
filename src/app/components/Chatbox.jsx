@@ -38,26 +38,25 @@ export default function Chatbox() {
   return (
     <>
       <div className="container">
-        <h1 style={{ color: "white" }}>HOA Regulation Search</h1>
-
-        <div className="inputWrapper">
-          <form onSubmit={handleSubmit}>
-            <input
-              className="input"
-              type="text"
-              placeholder="What do you want to know?"
-              value={question}
-              onChange={(e) => setQuestion(e.target.value)}
-              disabled={loading}
-            />
-          </form>
-
-          <button type="submit" disabled={loading}>
-            <SendHorizontal />
-          </button>
-        </div>
-
+        <h1 style={{ color: "white" }}>HOA Bylaws</h1>
         <div className="responseWindow">
+          <div className="inputWrapper">
+            <form onSubmit={handleSubmit}>
+              <input
+                className="input"
+                type="text"
+                placeholder="What do you want to know?"
+                value={question}
+                onChange={(e) => setQuestion(e.target.value)}
+                disabled={loading}
+              />
+            </form>
+
+            <button type="submit" disabled={loading}>
+              <SendHorizontal />
+            </button>
+          </div>
+
           {loading ? (
             <LoadingThreeDotsJumping />
           ) : (
