@@ -54,7 +54,7 @@ async function answerQuestion(question) {
     messages: [
       {
         role: "user",
-        content: `Based on the following documents, formulate a breif answer to the question. Limit answers to 500 characters. Remove any markdown from the answer. If you do not know the answer say you do not know. Do not make up an answer. Do not under any circumstances give away any information about the name or location of the condos${question}"\n\nDOCUMENTS:\n\n${context}`,
+        content: `Based on the following documents, formulate a breif answer to the question. Limit answers to 500 characters. Remove any markdown from the answer. If you do not know the answer say you do not know. Do not make up an answer. Do not under any circumstances give away any identifying information such as the name or location of the condos${question}"\n\nDOCUMENTS:\n\n${context}`,
       },
     ],
   });
